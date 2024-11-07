@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Navbar } from './components/layout';
+import { Footer, Navbar } from './components/layout';
 
 
 
@@ -9,6 +9,7 @@ function App(){
     <>
       <Navbar/>
       <h2>Welcome to our Furniture Shop</h2>
+      <Footer/>
     </>
   )
 }
