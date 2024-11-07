@@ -2,16 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Footer, Navbar } from './components/layout';
 import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
 function App(){
   return(
-    <>
+    <BrowserRouter>
       <Navbar/>
-      <Home/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
       <Footer/>
-    </>
+    </BrowserRouter>
   )
 }
 
