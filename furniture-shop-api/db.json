@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": "sofa123",
+      "name": "Washington Suite Sofa",
+      "brand": "ComfortLiving",
+      "category": "Furniture",
+      "price": "799.99",
+      "description": "A luxurious, comfortable sofa with high-density foam cushions, perfect for any modern living space. Available in multiple colors.",
+      "imageFilename": "washington_suite.jpg",
+      "createdAt": "2024-10-15"
+    }
+  ]
+}
