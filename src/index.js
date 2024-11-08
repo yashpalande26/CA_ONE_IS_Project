@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Footer, Navbar } from './components/layout';
 import Home from './pages/Home';
