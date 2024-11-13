@@ -9,6 +9,16 @@
       "description": "A luxurious, comfortable sofa with high-density foam cushions, perfect for any modern living space. Available in multiple colors.",
       "imageFilename": "washington_suite.jpg",
       "createdAt": "2024-10-15"
+    },
+    {
+      "name": "Test-edit",
+      "brand": "Test",
+      "category": "Other",
+      "price": "23456",
+      "description": "qwertyuiop asdfghjk asdfghj ",
+      "imageFilename": "1731346780866_dario_round_table.jpg",
+      "createdAt": "2024-11-11T17:39:40.872Z",
+      "id": "eB4BW1r"
     }
   ]
 }
