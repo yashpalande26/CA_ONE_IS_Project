@@ -4,11 +4,62 @@
       "id": "sofa123",
       "name": "Washington Suite Sofa",
       "brand": "ComfortLiving",
-      "category": "Furniture",
+      "category": "Sofas",
       "price": "799.99",
       "description": "A luxurious, comfortable sofa with high-density foam cushions, perfect for any modern living space. Available in multiple colors.",
       "imageFilename": "washington_suite.jpg",
       "createdAt": "2024-10-15"
+    },
+    {
+      "id": "table456",
+      "name": "Dario round table",
+      "brand": "ElegantHome",
+      "category": "Tables",
+      "price": "499.99",
+      "description": "A sleek, minimalist white round dining table with a sturdy base, ideal for contemporary spaces. Seats up to 4 people.",
+      "imageFilename": "dario_round_table.jpg",
+      "createdAt": "2024-10-20"
+    },
+    {
+      "id": "sofa789",
+      "name": "Humphrey 5 Piece Corner Suite",
+      "brand": "LuxuryLiving",
+      "category": "Sofas",
+      "price": "1299.99",
+      "description": "A stylish 5-piece corner suite with plush cushioning and a durable frame. Perfect for large living areas, offering comfort and elegance.",
+      "imageFilename": "Humphrey_5_Piece_Corner_Suite.jpg",
+      "createdAt": "2024-10-25"
+    },
+    {
+      "id": "sofa101",
+      "name": "Gemona Suite",
+      "brand": "Elegance Interiors",
+      "category": "Sofas",
+      "price": "999.99",
+      "description": "The Gemona Suite offers a chic and modern design with soft, durable fabric and deep cushions for ultimate comfort. Ideal for family living spaces.",
+      "imageFilename": "Gemona_Suite.jpg",
+      "createdAt": "2024-10-28"
+    },
+    {
+      "id": "sofa102",
+      "name": "Kingsley Suite",
+      "brand": "Royal Comfort",
+      "category": "Sofas",
+      "price": "1149.99",
+      "description": "A premium Kingsley Suite designed for luxury and style. Features high-quality upholstery, ergonomic design, and ample seating for a sophisticated look.",
+      "imageFilename": "Kingsley_Suite.jpg",
+      "createdAt": "2024-10-30"
+    },
+    {
+      "id": "sofa103",
+      "name": "Reilly Suite",
+      "brand": "CozyLife",
+      "category": "Sofas",
+      "price": "849.99",
+      "description": "The Reilly Suite combines timeless elegance with practical comfort. Upholstered in a soft fabric, it fits beautifully in any classic or contemporary home.",
+      "imageFilename": "Reilly_Suite.jpg",
+      "createdAt": "2024-11-01"
     }
   ]
 }
+
