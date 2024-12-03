@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 export default function ProductList() {
     const[products,setProducts] = useState([])
 
+    const[search, setSearch] = useState("")
+
     function getProducts(){
-        fetch("http://localhost:4000/products")
+        fetch("http://localhost:4000/products?q=" + search)
         .then(response => {
             if (response.ok){
                 return response.json()
@@ -21,7 +23,7 @@ export default function ProductList() {
         })
     }
 
-    useEffect(getProducts, [])
+    useEffect(getProducts, [search])
 
     function deleteProduct(id) {
         fetch("http://localhost:4000/products/" + id, {method: "DELETE"})
@@ -36,6 +38,14 @@ export default function ProductList() {
         })
     }
 
+    function handleSearch(event){
+        event.preventDefault() //To stop the brower from submitting the form to the server..
+
+        let text = event.target.search.value
+        setSearch(text)
+
+    }
+
 
     return(
         <div className="container my-4">
@@ -48,9 +58,9 @@ export default function ProductList() {
                         onClick={getProducts}>Refresh</button>
                 </div>
                 <div className="col">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form className="d-flex" onSubmit={handleSearch}>
+                        <input className="form-control me-2" type="search" placeholder="Search" name="search"/>
+                        <button className="btn btn-outline-success" type="submit">Search</button>
                     </form> 
                 </div>
 
