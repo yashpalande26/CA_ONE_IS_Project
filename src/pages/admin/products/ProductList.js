@@ -48,7 +48,10 @@ export default function ProductList() {
                         onClick={getProducts}>Refresh</button>
                 </div>
                 <div className="col">
-                    
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> 
                 </div>
 
                 <table className="table">
