@@ -6,8 +6,11 @@ export default function ProductList() {
 
     const[search, setSearch] = useState("")
 
+    const[sortColumn, setSortColumn] = useState({column: "id", orderBy: "asc"})
+
+
     function getProducts(){
-        fetch("http://localhost:4000/products?q=" + search)
+        fetch("http://localhost:4000/products?q=" + search + "&_sort=" + sortColumn.column + "&_order=" + sortColumn.orderBy)
         .then(response => {
             if (response.ok){
                 return response.json()
@@ -23,7 +26,7 @@ export default function ProductList() {
         })
     }
 
-    useEffect(getProducts, [search])
+    useEffect(getProducts, [search,sortColumn])
 
     function deleteProduct(id) {
         fetch("http://localhost:4000/products/" + id, {method: "DELETE"})
@@ -44,6 +47,17 @@ export default function ProductList() {
         let text = event.target.search.value
         setSearch(text)
 
+    }
+
+    function sortTable(column) {
+        let orderBy = "asc"
+
+        if (column === sortColumn.column) {
+            if (sortColumn.orderBy === "desc") orderBy = "desc"
+            else orderBy = "desc"
+        }
+
+        setSortColumn({column: column, orderBy: orderBy})
     }
 
 
@@ -71,7 +85,9 @@ export default function ProductList() {
                             <th>Name</th>
                             <th>Brand</th>
                             <th>Category</th>
-                            <th>Price</th>
+                            <th onClick={() => sortTable("price")}>
+                                Price
+                            </th>
                             <th>Image</th>
                             <th>Created At</th>
                             <th>Action</th>
