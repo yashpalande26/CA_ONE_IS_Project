@@ -107,10 +107,37 @@ export default function ProductList() {
                                             width="100" alt="....."/></td>
                                         <td>{product.createdAt}</td>
                                         <td style={{width:"10px", whiteSpace:"nowrap"}}>
-                                            <Link className="btn btn-primary btn-sm me-1" 
-                                                to={"/admin/products/edit/"+product.id}>Edit</Link>
-                                            <button type="button" className="btn btn-danger btn-sm"
-                                            onClick={() => deleteProduct(product.id)}>Delete</button>
+                                            <Link className="btn btn-sm me-1" 
+                                                style={{
+                                                    backgroundColor: "#4CAF50", 
+                                                    color: "white",
+                                                    padding: "8px 12px",
+                                                    fontSize: "14px",
+                                                    borderRadius: "4px",
+                                                    textDecoration: "none",
+                                                    transition: "background-color 0.3s ease"
+                                                }}
+                                                to={"/admin/products/edit/" + product.id}>
+                                                Edit
+                                            </Link>
+                                            <button 
+                                                type="button" 
+                                                className="btn btn-sm" 
+                                                style={{
+                                                    backgroundColor: "#f44336",
+                                                    color: "white",
+                                                    padding: "8px 12px",
+                                                    fontSize: "14px",
+                                                    borderRadius: "4px",
+                                                    cursor: "pointer",
+                                                    transition: "background-color 0.3s ease"
+                                                }}
+                                                onClick={() => deleteProduct(product.id)}
+                                                onMouseEnter={(e) => e.target.style.backgroundColor = "#d32f2f"} // Hover effect
+                                                onMouseLeave={(e) => e.target.style.backgroundColor = "#f44336"} // Reset hover
+                                            >
+                                                Delete
+                                            </button>
                                         </td>
                                     </tr>
                                 )
