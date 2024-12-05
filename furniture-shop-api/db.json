@@ -64,7 +64,7 @@
       "id": "bed101",
       "name": "Ambassador Bed Frame",
       "brand": "LuxurySleep",
-      "category": "Beds",
+      "category": "Sofa",
       "price": "599.99",
       "description": "A sleek and elegant bed frame with a sturdy build, designed to provide maximum comfort and style for your bedroom.",
       "imageFilename": "Ambassador_Bed_Frame.jpg",
@@ -132,4 +132,3 @@
     }
   ]
 }
-

@@ -99,8 +99,9 @@ export default function EditProduct() {
                                     <label className="col-sm-4 col-form-label">Category</label>
                                     <div className="col-sm-8">
                                         <select className="form-select" name="category" defaultValue={initialData.category}>
-                                            <option value='Other'>Other</option>
-                                            <option value='Furnitures'>Furnitures</option>
+                                            <option value='Sofa'>Sofa</option>
+                                            <option value='Beds'>Beds</option>
+                                            <option value='Beds'>Tables</option>
                                         </select>
                                         <span className="text-danger"></span>
                                     </div>

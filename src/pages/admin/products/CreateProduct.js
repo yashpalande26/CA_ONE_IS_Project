@@ -67,8 +67,9 @@ export default function CreateProduct() {
                             <label className="col-sm-4 col-form-label">Category</label>
                             <div className="col-sm-8">
                                 <select className="form-select" name="category">
-                                    <option value='Other'>Other</option>
-                                    <option value='Furnitures'>Furnitures</option>
+                                    <option value='Sofas'>Sofas</option>
+                                    <option value='Beds'>Beds</option>
+                                    <option value='Tables'>Tables</option>
                                 </select>
                                 <span className="text-danger"></span>
                             </div>
