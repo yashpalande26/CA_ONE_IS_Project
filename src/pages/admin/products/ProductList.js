@@ -44,7 +44,7 @@ export default function ProductList() {
     function handleSearch(event){
         event.preventDefault() //To stop the brower from submitting the form to the server..
 
-        let text = event.target.search.value
+        let text = event.target.elements.search.value
         setSearch(text)
 
     }
