@@ -1,7 +1,7 @@
 const jsonServer = require('json-server')
 const multer  = require('multer')
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('/home/db.json')
 const middlewares = jsonServer.defaults()
 
 // Set default middlewares (logger, static, cors and no-cache)
@@ -66,7 +66,7 @@ server.post("/products",(req, res, next) => {
 })
 
 // Use default router
-server.use(router)
-server.listen(4000, () => {
-  console.log('JSON Server is running')
-})
+const PORT = process.env.PORT || 4000;
+server.listen(PORT, () => {
+  console.log(`JSON Server is running on port ${PORT}`);
+});
