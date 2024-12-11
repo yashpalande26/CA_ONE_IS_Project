@@ -4,7 +4,7 @@ const server = jsonServer.create()
 const router = jsonServer.router('/home/db.json')
 const middlewares = jsonServer.defaults()
 
-// Set default middlewares (logger, static, cors and no-cache)
+// Set default middlewares (logger, static, cors and no-cache).
 server.use(middlewares)
 
 const storage = multer.diskStorage({
