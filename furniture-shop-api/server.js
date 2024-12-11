@@ -67,6 +67,6 @@ server.post("/products",(req, res, next) => {
 
 // Use default router
 const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`JSON Server is running on port ${PORT}`);
 });
