@@ -5,7 +5,7 @@ export function Navbar(){
         <nav className="navbar navbar-expand-lg bg-white border-bottom box-shadow">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    <img src="/sofa_icon.png" alt="..." width="30" className="me-2"/>Furniture Shop</Link>
+                    <img src={process.env.PUBLIC_URL + "/sofa_icon.png"} alt="..." width="30" className="me-2"/>Furniture Shop</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -40,7 +40,7 @@ export function Navbar(){
 export function Footer(){
     return(
         <div className="text-center p-4 border-top">
-            <img src="/sofa_icon.png" alt="..." width="30" className="me-2"/>
+            <img src={process.env.PUBLIC_URL + "/sofa_icon.png"} alt="..." width="30" className="me-2"/>
             Furniture Shop
         </div>
     )
