@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Footer, Navbar } from './components/layout';
 import Home from './pages/Home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {HashRouter, Route, Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import ProductList from './pages/admin/products/ProductList';
@@ -14,7 +14,7 @@ import EditProduct from './pages/admin/products/EditProduct';
 
 function App(){
   return(
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -25,7 +25,7 @@ function App(){
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
