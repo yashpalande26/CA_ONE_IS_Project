@@ -78,19 +78,20 @@ export default function ProductList() {
                     </form> 
                 </div>
 
-                <table className="table">
+
+                <table className="table" style={{ marginTop: '20px' }}>
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Brand</th>
-                            <th>Category</th>
-                            <th onClick={() => sortTable("price")}>
+                            <th style={{ color: '#006400', textAlign: 'center' }}>ID</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Name</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Brand</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Category</th>
+                            <th style={{ color: '#006400', textAlign: 'center', cursor:"pointer"}} onClick={() => sortTable("price")}>
                                 Price
                             </th>
-                            <th>Image</th>
-                            <th>Created At</th>
-                            <th>Action</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Image</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Created At</th>
+                            <th style={{ color: '#006400', textAlign: 'center' }} >Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -104,7 +105,7 @@ export default function ProductList() {
                                         <td>{product.category}</td>
                                         <td>{product.price}</td>
                                         <td><img src={"http://localhost:4000/images/"+ product.imageFilename}
-                                            width="100" alt="....."/></td>
+                                            width="200" alt="....."/></td>
                                         <td>{product.createdAt}</td>
                                         <td style={{width:"10px", whiteSpace:"nowrap"}}>
                                             <Link className="btn btn-sm me-1" 

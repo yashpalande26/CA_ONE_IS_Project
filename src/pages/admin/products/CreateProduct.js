@@ -101,10 +101,10 @@ export default function CreateProduct() {
 
                         <div className="row">
                             <div className="offset-sm-4 col-sm-4 d-grid">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-success">Submit</button>
                             </div>
                             <div className="col-sm-4 d-grid">
-                                <Link className="btn btn-secondary" to='/admin/products' role="button">Cancel</Link>
+                                <Link className="btn btn-danger" to='/admin/products' role="button">Cancel</Link>
                             </div>
                         </div>
                     </form>
