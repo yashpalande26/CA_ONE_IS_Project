@@ -10,7 +10,7 @@ export default function ProductList() {
 
 
     function getProducts(){
-        fetch("http://localhost:4000/products?q=" + search + "&_sort=" + sortColumn.column + "&_order=" + sortColumn.orderBy)
+        fetch(process.env.REACT_APP_FURNITURE_SHOP_URL+"/products?q=" + search + "&_sort=" + sortColumn.column + "&_order=" + sortColumn.orderBy)
         .then(response => {
             if (response.ok){
                 return response.json()
@@ -29,7 +29,7 @@ export default function ProductList() {
     useEffect(getProducts, [search,sortColumn])
 
     function deleteProduct(id) {
-        fetch("http://localhost:4000/products/" + id, {method: "DELETE"})
+        fetch(process.env.REACT_APP_FURNITURE_SHOP_URL+"/products/" + id, {method: "DELETE"})
         .then(response => {
             if (!response.ok) {
                 throw new Error()
@@ -104,7 +104,7 @@ export default function ProductList() {
                                         <td>{product.brand}</td>
                                         <td>{product.category}</td>
                                         <td>{product.price}</td>
-                                        <td><img src={"http://localhost:4000/images/"+ product.imageFilename}
+                                        <td><img src={process.env.REACT_APP_FURNITURE_SHOP_URL+"/images/"+ product.imageFilename}
                                             width="200" alt="....."/></td>
                                         <td>{product.createdAt}</td>
                                         <td style={{width:"10px", whiteSpace:"nowrap"}}>

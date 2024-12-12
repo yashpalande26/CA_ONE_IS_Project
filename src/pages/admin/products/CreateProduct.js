@@ -16,7 +16,7 @@ export default function CreateProduct() {
                 return
         }
         try {
-            const response = await fetch("http://localhost:4000/products",{
+            const response = await fetch(process.env.REACT_APP_FURNITURE_SHOP_URL+"/products",{
                 method: "POST",
                 body: formData
             })
