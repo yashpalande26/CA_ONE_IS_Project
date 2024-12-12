@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/CA_ONE_IS_Project/static/js/main.d4d6f486.js",
+    "main.js": "/CA_ONE_IS_Project/static/js/main.b51040eb.js",
     "index.html": "/CA_ONE_IS_Project/index.html",
-    "main.d4d6f486.js.map": "/CA_ONE_IS_Project/static/js/main.d4d6f486.js.map"
+    "main.b51040eb.js.map": "/CA_ONE_IS_Project/static/js/main.b51040eb.js.map"
   },
   "entrypoints": [
-    "static/js/main.d4d6f486.js"
+    "static/js/main.b51040eb.js"
   ]
 }
